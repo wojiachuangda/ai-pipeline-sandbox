@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import FastAPI, HTTPException, Query
-from pydantic import BaseModel, Field
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 
 from .domain import (
     TaskLifecycleStatus,
@@ -18,7 +18,6 @@ from .domain import (
     InvalidTransitionError,
 )
 from .queue import TaskQueue
-from .lifecycle import LifecycleManager
 
 # ── Application singleton ─────────────────────────────────────────────────
 

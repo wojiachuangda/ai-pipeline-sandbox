@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: sandbox-app
+Version: 0.1.0
+Summary: Complete mini project for AI delivery pipeline real runs
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.115
+Requires-Dist: uvicorn[standard]>=0.30
+Requires-Dist: pydantic>=2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.8; extra == "dev"
+
+﻿# AI Pipeline Sandbox
+
+完整小项目：给「AI 无人化开发流水线」做真实 Issue → PR 演练。
+
+## 结构
+
+- `src/sandbox_app/` 业务代码
+- `tests/` 自动化测试
+- GitHub Actions：lint + test
+
+## 本地
+
+```bash
+pip install -e ".[dev]"
+pytest
+ruff check .
+```

@@ -11,3 +11,8 @@ def health() -> dict[str, str]:
 def ping() -> dict[str, str]:
     """Simple readiness probe."""
     return {"pong": "true"}
+
+
+def version() -> dict[str, str]:
+    """Return application version."""
+    return {"version": "0.1.0"}

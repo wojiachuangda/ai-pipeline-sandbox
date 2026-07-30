@@ -1,0 +1,5 @@
+starlette[standard]>=0.40
+
+[dev]
+pytest>=8.0
+ruff>=0.8

@@ -1,14 +1,14 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "sandbox-app"
 version = "0.1.0"
-description = "Complete mini project for AI delivery pipeline real runs"
+description = "AI agent platform — domain skeleton, health probes, and extensible API scaffold"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["starlette[standard]>=0.40"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.8"]

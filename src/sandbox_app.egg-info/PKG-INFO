@@ -1,3 +1,14 @@
+Metadata-Version: 2.4
+Name: sandbox-app
+Version: 0.1.0
+Summary: AI agent platform — domain skeleton, health probes, and extensible API scaffold
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: starlette[standard]>=0.40
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.8; extra == "dev"
+
 ﻿# AI Pipeline Sandbox
 
 完整小项目：给「AI 无人化开发流水线」做真实 Issue → PR 演练。

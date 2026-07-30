@@ -1,4 +1,4 @@
-﻿from sandbox_app import health, ping
+﻿from sandbox_app import health, ping, version
 
 
 def test_health() -> None:
@@ -7,3 +7,7 @@ def test_health() -> None:
 
 def test_ping() -> None:
     assert ping()["pong"] == "true"
+
+
+def test_version() -> None:
+    assert version() == {"version": "0.1.0"}

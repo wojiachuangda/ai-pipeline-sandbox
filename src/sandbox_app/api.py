@@ -1,7 +1,11 @@
-"""Sandbox application package."""
+"""Flat re-export surface for the agent template marketplace.
+
+Tests import from *one* place; internal consumers import from here as well.
+"""
+
+from __future__ import annotations
 
 from .agent_store import AgentStore, agent_store
-from .core import health, ping
 from .models import Agent, AgentStatus, AgentTemplate, AgentType
 from .template_store import TemplateStore, template_store
 
@@ -13,7 +17,5 @@ __all__ = [
     "AgentType",
     "TemplateStore",
     "agent_store",
-    "health",
-    "ping",
     "template_store",
 ]

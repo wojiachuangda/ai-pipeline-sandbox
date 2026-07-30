@@ -1,3 +1,5 @@
-﻿def health() -> dict[str, str]:
-    return {"status": "ok"}
+﻿"""Sandbox application package."""
 
+from .core import health, ping
+
+__all__ = ["health", "ping"]

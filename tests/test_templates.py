@@ -4,9 +4,7 @@ import pytest
 
 from sandbox_app import (
     MissingTemplateVariableError,
-    PromptTemplate,
     TemplateStore,
-    TemplateVersion,
     VersionedTemplateStore,
     estimate_tokens,
     extract_variables,

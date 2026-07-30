@@ -3,7 +3,6 @@
 import pytest
 
 from sandbox_app import (
-    Experiment,
     ExperimentStatus,
     ExperimentStore,
     VALID_METRICS,
@@ -144,7 +143,7 @@ class TestExperimentStoreOps:
             variants=[Variant(template_id="a", weight=100)],
             metrics=["response_time"],
         )
-        exp2 = store.create(
+        store.create(
             name="e2",
             variants=[Variant(template_id="b", weight=100)],
             metrics=["token_usage"],
